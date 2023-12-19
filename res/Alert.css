@@ -1,0 +1,44 @@
+@font-face {
+	font-family: 'Macondo';
+	src: url('Macondo-Regular.ttf');
+}
+
+* {
+	-fx-font-family: 'Macondo', cursive;
+}
+
+#root {
+	-fx-background-image: url("GUI/bg.png");
+	-fx-background-position: center;
+	-fx-background-size: cover;
+	-fx-background-repeat: no-repeat;
+}
+
+#root > *.button-bar > *.container{
+    -fx-background-image: url("GUI/bgDark.png");
+	-fx-background-position: center;
+	-fx-background-size: cover;
+	-fx-background-repeat: no-repeat;
+}
+#root > *.label.content{
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+}
+
+.button {
+	-fx-font-size: 24px;
+	-fx-text-fill: white;
+	-fx-background-color: none;
+	-fx-background-image: url("GUI/btn.jpg");
+	-fx-background-size: Cover;
+}
+
+.button:hover {
+	-fx-background-image: url("GUI/btnDark.jpg");
+	-fx-cursor: hand;
+}
+
+.button:pressed {
+	-fx-border-color: maroon;
+	-fx-border-width: 3px;
+}

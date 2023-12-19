@@ -1,0 +1,64 @@
+@font-face {
+	font-family: 'Macondo';
+	src: url('Macondo-Regular.ttf');
+}
+
+* {
+	-fx-font-family: 'Macondo', cursive;
+}
+
+#root {
+	-fx-background-image: url("GUI/InventoryBg.jpg");
+	-fx-background-position: center;
+	-fx-background-size: cover;
+	-fx-background-repeat: no-repeat;
+}
+
+.tool-bar {
+	-fx-background-image: url("GUI/up.png");
+	-fx-background-position: center;
+	-fx-background-size: cover;
+	-fx-background-repeat: no-repeat;
+}
+
+.label {
+	-fx-text-fill: white;
+}
+
+.button {
+	-fx-background-color: none;
+	-fx-background-image: url("GUI/prew.png");
+	-fx-background-position: center;
+	-fx-background-size: cover;
+	-fx-background-repeat: no-repeat;
+	-fx-background-radius: 20px;
+	-fx-border-radius: 12px;
+}
+
+.button:hover {
+	-fx-background-image: url("GUI/prewDark.png");
+}
+
+.button:pressed {
+	-fx-border-color: green;
+	-fx-border-width: 5px;
+}
+
+.slider .track {
+	-fx-pref-height: 30;
+	-fx-background-color: none;
+	-fx-background-image: url("GUI/bgload.png");
+	-fx-background-position: center;
+	-fx-background-size: stretch;
+	-fx-background-repeat: no-repeat;
+}
+
+.slider .thumb {
+	-fx-pref-width: 30;
+	-fx-pref-height: 30;
+	-fx-background-color: none;
+	-fx-background-image: url("GUI/thumb.png");
+	-fx-background-position: center;
+	-fx-background-size: cover;
+	-fx-background-repeat: no-repeat;
+}
